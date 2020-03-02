@@ -17,10 +17,10 @@ public class BallDemo
 {
     private Canvas myCanvas;
     
-    int boxHeight = 600;
-    int boxWidth = 550;
-    int canvasHeight = 700;
-    int canvasWidth = 700;
+    int boxHeight = 350;
+    int boxWidth = 350;
+    int canvasHeight = 600;
+    int canvasWidth = 500;
     int xPos = 10;
     int yPos= 10;
     HashSet<BoxBall> balls = new HashSet<BoxBall>();
