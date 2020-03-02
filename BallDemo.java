@@ -63,13 +63,14 @@ public class BallDemo
         private void boxBounce(int numberofBalls)
         {
         Random rand = new Random();
-         Color ballColor = new Color(rand.nextInt(240), 
-         rand.nextInt(240), rand.nextInt(240));
+         
             myCanvas.drawRectangle(xPos, yPos, boxWidth,
                                              boxHeight);
             //add balls to the set
             for(int i = 0; i < numberofBalls; i++)
             {
+                Color ballColor = new Color(rand.nextInt(240), 
+         rand.nextInt(240), rand.nextInt(240));
                 int x = randomPosition();
                 int y = randomPosition();
                 BoxBall boxBall = new BoxBall(x,y,16,ballColor, boxWidth,
