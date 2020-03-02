@@ -57,6 +57,9 @@ public class BallDemo
             
             }
         }
+        /**
+         * adds balls to the set, and draws them
+         */
         private void boxBounce(int numberofBalls)
         {
             myCanvas.drawRectangle(xPos, yPos, boxWidth,
@@ -74,7 +77,8 @@ public class BallDemo
         }
         
         /**
-         * 
+         * returns an int which represents the random position
+         * between the bottom and top half of the box
          */
         private int randomPosition()
         {//had to parse as int for some reason
