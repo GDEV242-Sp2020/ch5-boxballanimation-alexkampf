@@ -8,7 +8,7 @@ import java.awt.geom.*;
  * 
  * @author Michael Kölling (mik)
  * @author Bruce Quig
- *
+ * @author modified by Alexander Kampf
  * @version 2011.07.31
  */
 
@@ -100,7 +100,12 @@ public class Canvas
         graphic.draw(shape);
         canvas.repaint();
     }
- 
+    public void drawRectangle(int x, int y, int height, 
+                                                    int width)
+    {
+        graphic.drawRect(x, y, height, width);
+        canvas.repaint();
+    }
     /**
      * Fill the internal dimensions of a given shape with the current 
      * foreground color of the canvas.
